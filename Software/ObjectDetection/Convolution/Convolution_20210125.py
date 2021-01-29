@@ -39,7 +39,7 @@ def normal(image, kernel):
     else:
         return res
 if __name__ == '__main__':
-    path = './img/doramon.jpeg'      # 原图像路径
+    path = './testt.jpg'      # 原图像路径
     image = cv2.imread(path)
 
     #kernel 是一个3x3的边缘特征提取器，可以提取各个方向上的边缘
@@ -57,5 +57,5 @@ if __name__ == '__main__':
                         [0, 1, 1, 1, 1]])
     res = conv(image, kernel1, 'fill')
     plt.imshow(res)
-    plt.savefig('./out/filtered_picdoramon01.jpg', dpi=600)
+    plt.savefig('./01.jpg', dpi=600)
     plt.show()
